@@ -4,6 +4,6 @@ part of 'post_bloc.dart';
 class PostState with _$PostState {
   const factory PostState.initial() = Initial;
   const factory PostState.loading() = Loading;
-  const factory PostState.loaded() = Loaded;
-  const factory PostState.error() = Error;
+  const factory PostState.loaded(List<PostEntity> posts) = Loaded;
+  const factory PostState.error(String messege) = Error;
 }
